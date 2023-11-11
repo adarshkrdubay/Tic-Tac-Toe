@@ -11,7 +11,6 @@ const allcombo = [
     [0, 4, 8], // Diagonal
     [2, 4, 6]  // Diagonal
 ];
-
 const defstart = "X"
 var lastvall = "O"
 var play1 =[]
@@ -46,6 +45,7 @@ panels.forEach((panel , index)=>{
             console.log(index)
             console.log(play1,play2)
             cwin()
+            drawcheck()
         } 
     })
 })
@@ -74,3 +74,12 @@ function winhig(colb){
 reStart.addEventListener('click',()=>{
      location.reload()
 })
+
+function drawcheck(){
+    if(gameOver!=1){
+    if (allredydone.length===9){
+        alert("Draw")
+        playTag.innerText="Draw"
+        reStart.classList.add("show")
+    }}
+}
