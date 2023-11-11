@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: gray;
+    background-color: rgb(77, 48, 48);
+
+}
+.gamebox{
+    border: 1.5px solid gray;
+}
+.rw1,.rw2,.rw3{
+    display: flex;
+    padding: 0px;
+}
+.col{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid gray;
+    cursor: pointer;
+}
+.xcol{
+    background-color: aqua;
+    color: rgb(4, 56, 56);
+    font-weight: bolder;
+}
+.ocol{
+    background-color: pink;
+    color: rgb(26, 4, 46);
+    font-weight: bolder;
+}
+.win{
+    background-color: yellow;
+    color: red;
+    
+}
+.restart{
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 230, 230);
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    font-weight: 700;
+
+    border-radius: 20px;
+    
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
