@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -25,10 +24,13 @@
             <div class="col"></div>
             <div class="col"></div>
         </div>
-
     </div>
-    <h2 id="pt">Player 1 turn</h2>
-    <button class="restart hide" id="restart">Restart</button>
+    <h2 id="pt" class="hide">Player turn</h2>
+    <div class="ce cls"></div>
+    <button class="restart" id="Strat" onclick="players()">Pass nd play</button>
+    <button class="restart" id="Stratc" onclick="compVs()">Vs Comp</button>
+    <button class="restart hide"  id="restart">Restart</button>
+    <p>© AKD</p>
     <script src="script.js"></script>
 </body>
 </html>
